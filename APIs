@@ -1,8 +1,8 @@
 #R Code for Open Baltimore APIs
-
-#Fire Stations dataset
 #install.packages("RSocrata")
 #library(RSocrata)
+
+#Fire Stations dataset
 fireurl<-("https://data.baltimorecity.gov/resource/689q-eiea.csv")
 firedata<-read.socrata(fireurl)
 
