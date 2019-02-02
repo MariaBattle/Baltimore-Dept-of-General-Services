@@ -1,0 +1,12 @@
+#R Code for Open Baltimore APIs
+
+#Fire Stations dataset
+#install.packages("RSocrata")
+#library(RSocrata)
+fireurl<-("https://data.baltimorecity.gov/resource/689q-eiea.csv")
+firedata<-read.socrata(fireurl)
+
+#Baltimore Operating Budget Dataset (within the Public Asset Inventory listing)
+budgeturl<-("https://data.baltimorecity.gov/d/g5wn-pq7y")
+budget<-read.socrata(budgeturl)
+
